@@ -16,7 +16,7 @@
         <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
 
         <endeavour-security.version>1.0-SNAPSHOT</endeavour-security.version>
-        <endeavour-config.version>1.07-SNAPSHOT</endeavour-config.version>
+        <endeavour-config.version>1.08-SNAPSHOT</endeavour-config.version>
 
         <guava.version>19.0</guava.version>
     </properties>
