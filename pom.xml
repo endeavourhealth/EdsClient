@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.endeavourhealth.common</groupId>
     <artifactId>eds-client</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -15,9 +13,10 @@
         <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
         <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
 
-        <endeavour-security.version>1.0-SNAPSHOT</endeavour-security.version>
-        <endeavour-config.version>1.08-SNAPSHOT</endeavour-config.version>
+        <endeavour-security.version>1.12-SNAPSHOT</endeavour-security.version>
+        <endeavour-config.version>1.23-SNAPSHOT</endeavour-config.version>
 
+        <commons.version>2.6</commons.version>
         <guava.version>19.0</guava.version>
     </properties>
 
@@ -32,7 +31,12 @@
             <artifactId>configmanager</artifactId>
             <version>${endeavour-config.version}</version>
         </dependency>
-        <dependency>
+      <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>${commons.version}</version>
+      </dependency>
+      <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>${guava.version}</version>
